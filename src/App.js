@@ -1,5 +1,5 @@
 import './App.scss';
-import Header from './sections/Header/Header';
+// import Header from './sections/Header/Header';
 import Branding from './sections/Branding/Branding';
 import Features from './sections/Features/Features';
 import Advantages from './sections/Advantages/Advantages';
