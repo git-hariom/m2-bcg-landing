@@ -54,6 +54,9 @@ const Branding = ({prop})=>{
                                     </div>
                                 </div>
                             </div>
+                            <div className="add-to-cart-btn-wrapper">
+                                    <button className="btn">Add to Cart</button>
+                            </div>
                         </div>
                     </div>
                     <div className="cart-icon-wrapper">
