@@ -10,7 +10,7 @@ import Footer from './sections/Footer/Footer';
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      {/* <Header></Header> */}
       <Branding></Branding>
       <Features></Features>
       <Advantages></Advantages>
