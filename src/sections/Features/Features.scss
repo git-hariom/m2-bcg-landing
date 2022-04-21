@@ -1,269 +1,533 @@
-.features-wrapper{
-    min-height : 40rem;
+.features-wrapper {
+  min-height: 40rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5%;
+  .title-wrapper {
+    height: 2rem;
+    width: 25%;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 36px;
+    text-align: center;
+  }
+  .image-gallery-wrapper {
+    flex: 1;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 5%;
-    .title-wrapper{
+    grid-gap: 10px;
+    .section1 {
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      font-family: "Lato", sans-serif;
+      padding: 5%;
+      position: relative;
+      .payment-image-wrapper {
+        position: absolute;
+        left: -2%;
+        top: 10%;
+        height: 12rem;
+        width: 10rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../../assets/imgs/image\ 16.png");
+      }
+      .gpay-image-wrapper {
+        position: absolute;
+        left: 5%;
+        top: 5%;
         height: 2rem;
-        width: 25%;
-        font-family: "Ubuntu", sans-serif;
-        font-size: 36px;
-        text-align: center;
-    }
-    .image-gallery-wrapper{
-        flex: 1;
+        width: 2rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../../assets/imgs/kisspng-apple-pay-google-pay-apple-wallet-payment-5b074a74632137\ 1.png");
+      }
+      .images-wrapper {
+        height: 50%;
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
-        justify-content: center;
-        margin-top: 5%;
-        grid-gap: 10px;
-        .section1{
-            height: 100%;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-            flex-direction: column;
-            font-family: "Lato", sans-serif;
-            padding: 5%;
-            position: relative;
-            .payment-image-wrapper{
-                position: absolute;
-                left: -2%;
-                top: 10%;
-                height: 12rem;
-                width: 10rem;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-image: url('../../assets/imgs/image\ 16.png');
-            }
-            .gpay-image-wrapper{
-                position: absolute;
-                left: 5%;
-                top: 5%;
-                height: 2rem;
-                width: 2rem;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-image: url('../../assets/imgs/kisspng-apple-pay-google-pay-apple-wallet-payment-5b074a74632137\ 1.png');
-            }
-            .images-wrapper{
-                height: 50%;
-                width: 100%;
-                margin-bottom: 1rem;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-image: url('../../assets/imgs/Rectangle\ 223\ \(1\).png');
-            }
-            .title{
-                font-size: 32px;
-                text-align: left;
-                display: flex;
-                justify-content: flex-start;
-                margin-bottom: 1rem;
-                margin-left: 10%;
-            }
-            .sub-title{
-                color: #94A2B3;
-                margin-bottom: 1rem;
-                margin-left: 10%;
-            }
-            .redirection-link{
-                color: #299EF3;
-                font-family: "Ubuntu", sans-serif;
-                font-size: 18px;
-                margin-left: 10%;
-            }
-        }
-        .section2{
-            height: 100%;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-            flex-direction: column;
-            font-family: "Lato", sans-serif;
-            padding: 5%;
-            margin-top: 10rem;
-            position: relative;
-            .square-image-wrapper{
-                position: absolute;
-                left: 15%;
-                top: -10%;
-                height: 12rem;
-                width: 12rem;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-image: url('../../assets/imgs/image\ 17.png');
-            }
-            .facebook-image-wrapper{
-                position: absolute;
-                left: 15%;
-                top: 18%;
-                height: 12rem;
-                width: 12rem;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-image: url('../../assets/imgs/image\ 19.png');
-            }
-            .chimp-image-wrapper{
-                position: absolute;
-                left: 50%;
-                top: 0%;
-                height: 12rem;
-                width: 12rem;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-image: url('../../assets/imgs/image\ 18.png');
-            }
-            .jetpack-image-wrapper{
-                position: absolute;
-                left: 40%;
-                top: 20%;
-                height: 12rem;
-                width: 12rem;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-image: url('../../assets/imgs/image\ 22.png');
-            }
-            .google-ads-image-wrapper{
-                position: absolute;
-                left: 30%;
-                top: 35%;
-                height: 12rem;
-                width: 12rem;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-image: url('../../assets/imgs/image\ 20.png');
-            }
-            .images-wrapper{
-                height: 50%;
-                width: 100%;
-                margin-bottom: 2rem;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-image: url('../../assets/imgs/Rectangle\ 224.png');
-            }
-            .title{
-                font-size: 32px;
-                text-align: left;
-                display: flex;
-                justify-content: flex-start;
-                margin-bottom: 1rem;
-                margin-left: 10%;
-            }
-            .sub-title{
-                color: #94A2B3;
-                margin-bottom: 1rem;
-                margin-left: 10%;
-            }
-            .redirection-link{
-                color: #299EF3;
-                font-family: "Ubuntu", sans-serif;
-                font-size: 18px;
-                margin-left: 10%;
-            }
-        }
-        .section3{
-            height: 100%;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-            flex-direction: column;
-            font-family: "Lato", sans-serif;
-            padding: 5%;
-            margin-top: 20rem;
-            position: relative;
-            .laptop-image-wrapper{
-                position: absolute;
-                left: 10%;
-                top: -10%;
-                height: 12rem;
-                width: 12rem;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-image: url('../../assets/imgs/Rectangle\ 227.png');
-            }
-            .people-image-wrapper{
-                position: absolute;
-                left: 50%;
-                top: -20%;
-                height: 12rem;
-                width: 12rem;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-image: url('../../assets/imgs/Rectangle\ 228.png');
-            }
-            .group-image-wrapper{
-                position: absolute;
-                left: 60%;
-                top: 10%;
-                height: 12rem;
-                width: 12rem;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-image: url('../../assets/imgs/Rectangle\ 226.png');
-            }
-            .images-wrapper{
-                height: 50%;
-                width: 100%;
-                margin-bottom: 1rem;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-image: url('../../assets/imgs/Rectangle\ 225.png');
-            }
-            .title{
-                font-size: 32px;
-                text-align: left;
-                display: flex;
-                justify-content: flex-start;
-                margin-bottom: 1rem;
-                margin-left: 10%;
-            }
-            .sub-title{
-                color: #94A2B3;
-                margin-bottom: 1rem;
-                margin-left: 10%;
-            }
-            .redirection-link{
-                color: #299EF3;
-                font-family: "Ubuntu", sans-serif;
-                font-size: 18px;
-                margin-left: 10%;
-            }
-        }
+        margin-bottom: 1rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../../assets/imgs/Rectangle\ 223\ \(1\).png");
+      }
+      .title {
+        font-size: 32px;
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+        margin-left: 10%;
+      }
+      .sub-title {
+        color: #94a2b3;
+        margin-bottom: 1rem;
+        margin-left: 10%;
+      }
+      .redirection-link {
+        color: #299ef3;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        margin-left: 10%;
+      }
     }
+    .section2 {
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      font-family: "Lato", sans-serif;
+      padding: 5%;
+      margin-top: 10rem;
+      position: relative;
+      .square-image-wrapper {
+        position: absolute;
+        left: 15%;
+        top: -10%;
+        height: 12rem;
+        width: 12rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../../assets/imgs/image\ 17.png");
+      }
+      .facebook-image-wrapper {
+        position: absolute;
+        left: 15%;
+        top: 18%;
+        height: 12rem;
+        width: 12rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../../assets/imgs/image\ 19.png");
+      }
+      .chimp-image-wrapper {
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        height: 12rem;
+        width: 12rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../../assets/imgs/image\ 18.png");
+      }
+      .jetpack-image-wrapper {
+        position: absolute;
+        left: 40%;
+        top: 20%;
+        height: 12rem;
+        width: 12rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../../assets/imgs/image\ 22.png");
+      }
+      .google-ads-image-wrapper {
+        position: absolute;
+        left: 30%;
+        top: 35%;
+        height: 12rem;
+        width: 12rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../../assets/imgs/image\ 20.png");
+      }
+      .images-wrapper {
+        height: 50%;
+        width: 100%;
+        margin-bottom: 2rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../../assets/imgs/Rectangle\ 224.png");
+      }
+      .title {
+        font-size: 32px;
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+        margin-left: 10%;
+      }
+      .sub-title {
+        color: #94a2b3;
+        margin-bottom: 1rem;
+        margin-left: 10%;
+      }
+      .redirection-link {
+        color: #299ef3;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        margin-left: 10%;
+      }
+    }
+    .section3 {
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      font-family: "Lato", sans-serif;
+      padding: 5%;
+      margin-top: 20rem;
+      position: relative;
+      .laptop-image-wrapper {
+        position: absolute;
+        left: 10%;
+        top: -10%;
+        height: 12rem;
+        width: 12rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../../assets/imgs/Rectangle\ 227.png");
+      }
+      .people-image-wrapper {
+        position: absolute;
+        left: 50%;
+        top: -20%;
+        height: 12rem;
+        width: 12rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../../assets/imgs/Rectangle\ 228.png");
+      }
+      .group-image-wrapper {
+        position: absolute;
+        left: 60%;
+        top: 10%;
+        height: 12rem;
+        width: 12rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../../assets/imgs/Rectangle\ 226.png");
+      }
+      .images-wrapper {
+        height: 50%;
+        width: 100%;
+        margin-bottom: 1rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../../assets/imgs/Rectangle\ 225.png");
+      }
+      .title {
+        font-size: 32px;
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+        margin-left: 10%;
+      }
+      .sub-title {
+        color: #94a2b3;
+        margin-bottom: 1rem;
+        margin-left: 10%;
+      }
+      .redirection-link {
+        color: #299ef3;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        margin-left: 10%;
+      }
+    }
+  }
 }
 
 //Large Desktop
 @media (max-width: 1440px) {
-   
+  .features-wrapper {
+    .title-wrapper {
+    }
+    .image-gallery-wrapper {
+      .section1 {
+        .payment-image-wrapper {
+        }
+        .gpay-image-wrapper {
+        }
+        .images-wrapper {
+        }
+        .title {
+        }
+        .sub-title {
+        }
+        .redirection-link {
+        }
+      }
+      .section2 {
+        .square-image-wrapper {
+        }
+        .facebook-image-wrapper {
+        }
+        .chimp-image-wrapper {
+        }
+        .jetpack-image-wrapper {
+        }
+        .google-ads-image-wrapper {
+        }
+        .images-wrapper {
+        }
+        .title {
+        }
+        .sub-title {
+        }
+        .redirection-link {
+        }
+      }
+      .section3 {
+        .laptop-image-wrapper {
+        }
+        .people-image-wrapper {
+        }
+        .group-image-wrapper {
+        }
+        .images-wrapper {
+        }
+        .title {
+        }
+        .sub-title {
+        }
+        .redirection-link {
+        }
+      }
+    }
+  }
 }
 //Laptop
 @media (max-width: 1024px) {
-    
+    .features-wrapper {
+        .title-wrapper {
+            width: 30%;
+        }
+        .image-gallery-wrapper {
+          .section1 {
+            .payment-image-wrapper {
+                left: -7%;
+            }
+            .gpay-image-wrapper {
+                left: 2%;
+            }
+            .images-wrapper {
+            }
+            .title {
+            }
+            .sub-title {
+            }
+            .redirection-link {
+            }
+          }
+          .section2 {
+            .square-image-wrapper {
+                left: 6%;
+                top: -7%;
+            }
+            .facebook-image-wrapper {
+                left: 6%;
+            }
+            .chimp-image-wrapper {
+            }
+            .jetpack-image-wrapper {
+            }
+            .google-ads-image-wrapper {   
+                left: 22%;
+                top: 32%;
+            }
+            .images-wrapper {
+            }
+            .title {
+            }
+            .sub-title {
+            }
+            .redirection-link {
+            }
+          }
+          .section3 {
+            .laptop-image-wrapper {
+            }
+            .people-image-wrapper {
+                top: -17%;
+                left: 44%;
+            }
+            .group-image-wrapper {
+                left: 44%;
+                top: 15%;
+            }
+            .images-wrapper {
+            }
+            .title {
+            }
+            .sub-title {
+            }
+            .redirection-link {
+            }
+          }
+        }
+      }
 }
 //Tablets
 @media (max-width: 768px) {
-   
+    .features-wrapper {
+        margin-top: 20%;
+        .title-wrapper {
+            width: 40%;
+        }
+        .image-gallery-wrapper {
+          .section1 {
+            .payment-image-wrapper {
+                height: 10rem;
+                width: 8rem;
+            }
+            .gpay-image-wrapper {
+            }
+            .images-wrapper {
+            }
+            .title {
+            }
+            .sub-title {
+            }
+            .redirection-link {
+            }
+          }
+          .section2 {
+            .square-image-wrapper {
+                height: 10rem;
+                width: 10rem;
+            }
+            .facebook-image-wrapper {
+                height: 10rem;
+                width: 10rem;
+            }
+            .chimp-image-wrapper {
+                height: 10rem;
+                width: 10rem;
+            }
+            .jetpack-image-wrapper {
+                height: 10rem;
+                width: 10rem;
+            }
+            .google-ads-image-wrapper {
+                height: 10rem;
+                width: 10rem;
+            }
+            .images-wrapper {
+            }
+            .title {
+            }
+            .sub-title {
+            }
+            .redirection-link {
+            }
+          }
+          .section3 {
+            .laptop-image-wrapper {
+                height: 10rem;
+                width: 10rem;
+                left: 0;
+            }
+            .people-image-wrapper {
+                height: 10rem;
+                width: 10rem;
+            }
+            .group-image-wrapper {
+                height: 10rem;
+                width: 10rem;
+            }
+            .images-wrapper {
+            }
+            .title {
+            }
+            .sub-title {
+            }
+            .redirection-link {
+            }
+          }
+        }
+      }
 }
 //Mobile
 @media (max-width: 425px) {
-  
+    .features-wrapper {
+        .title-wrapper {
+            font-size: 24px;
+            width: 50%;
+            margin-bottom: 3rem;
+        }
+        .image-gallery-wrapper {
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: none;
+          .section1 {
+            .payment-image-wrapper {
+                left: 0;
+            }
+            .gpay-image-wrapper {
+                left: 10%;
+            }
+            .images-wrapper {
+            }
+            .title {
+            }
+            .sub-title {
+            }
+            .redirection-link {
+            }
+          }
+          .section2 {
+            margin-top: 0;
+            .square-image-wrapper {
+            }
+            .facebook-image-wrapper {
+            }
+            .chimp-image-wrapper {
+            }
+            .jetpack-image-wrapper {
+            }
+            .google-ads-image-wrapper {
+            }
+            .images-wrapper {
+            }
+            .title {
+            }
+            .sub-title {
+            }
+            .redirection-link {
+            }
+          }
+          .section3 {
+              margin-top: 15rem;
+            .laptop-image-wrapper {
+            }
+            .people-image-wrapper {
+            }
+            .group-image-wrapper {
+                left: 60%;
+                top: 22%;
+            }
+            .images-wrapper {
+            }
+            .title {
+            }
+            .sub-title {
+            }
+            .redirection-link {
+            }
+          }
+        }
+      }
 }
