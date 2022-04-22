@@ -1,15 +1,10 @@
 import './Header.scss';
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 const Header = ({prop})=>{
 
     const [toggleHemberger, setToggleHemberger] = useState(false);
     
-    useEffect(()=>{
-       window.alert(window.screen.width);
-       window.alert(window.screen.height);
-    },[toggleHemberger]);
-
     const renderConditionalHeader = () =>{
         if(!toggleHemberger && window.screen.width<=768){
             return (
