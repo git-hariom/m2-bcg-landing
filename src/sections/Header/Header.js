@@ -7,11 +7,10 @@ const Header = ({prop})=>{
     
     useEffect(()=>{
         console.log(toggleHemberger);
-        window.alert(toggleHemberger);
     },[toggleHemberger]);
 
     const renderConditionalHeader = () =>{
-        if(!toggleHemberger && window.innerHeight<677 && window.innerWidth<426){
+        if(!toggleHemberger){
             return (
                 <div className="hemberger" onClick={()=>setToggleHemberger((prev)=>{return !prev})}></div>
             )
