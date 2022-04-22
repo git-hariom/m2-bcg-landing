@@ -7,6 +7,7 @@ const Header = ({prop})=>{
     
     useEffect(()=>{
         console.log(toggleHemberger);
+        window.alert(toggleHemberger);
     },[toggleHemberger]);
 
     const renderConditionalHeader = () =>{
