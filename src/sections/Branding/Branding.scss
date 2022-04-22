@@ -658,18 +658,30 @@
 @media (max-width: 425px) {
     .branding-wrapper {
         .left-section-wrapper {
-            grid-template-rows: 3fr 1fr 1fr;
+            grid-template-rows: 2fr 1fr 1fr;
           .title {
+            margin-left: 2rem;
+            font-size: 2.5rem;
           }
           .sub-title {
+              margin-left: 2rem;  
               width: 80%;
+              margin-top: -20%;
           }
           .btn-wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 2rem;
+            margin-top: -6vw;
             .start-btn {
+              margin-bottom: 1rem;
             }
             .or-label {
+              margin-bottom: 1rem;
             }
             .customize-label {
+              margin-bottom: 1rem;
+              margin-left: 10px;
             }
           }
         }
@@ -685,6 +697,7 @@
           }
           .add-cart-wrapper {
             right: 0;
+            height: 9rem;
             .img-container {
                 background-size: cover;
             }
