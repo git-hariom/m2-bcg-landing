@@ -32,7 +32,7 @@ const Footer = ({ prop }) => {
         <div className="label">COMMERCE</div>
         <div className="sm-circle"></div>
       </div>
-      <dic className="ruler"></dic>
+      <div className="ruler"></div>
       <div className="sec-navs">
         <div className="navs">
           <div className="nav-section">
