@@ -697,7 +697,7 @@
           }
           .add-cart-wrapper {
             right: 0;
-            height: 9rem;
+            height: 11rem;
             .img-container {
                 background-size: cover;
             }
@@ -747,6 +747,12 @@
                     }
                   }
                 }
+                .add-to-cart-btn-wrapper{
+                  .btn{
+                    width: 5rem;
+                    font-size: 10px;
+                  }
+                }
               }
             }
             .cart-icon-wrapper {
@@ -755,7 +761,7 @@
             }
             .shield-icon-wrapper {
                 left: 60%;
-                bottom: -15%;
+                bottom: -20%;
                 .shield-icon {
                  
                 }
@@ -777,7 +783,7 @@
             height: 6rem;
             width: 6rem;
             bottom: -28%;
-            left: 32%;
+            left:   18%;
           }
         }
       }

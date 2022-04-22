@@ -353,13 +353,13 @@
         }
         .big-circle {
           &.left {
-            top: 10%;
-            left: 15%;
+            top: 13%;
+            left: 6%;
           }
           &.right {
-            right: 36%;
+            right: 12%;
             top: auto;
-            bottom: 7%;
+            bottom: 12%;
             height: 7rem;
             width: 7rem;
           }
@@ -407,7 +407,7 @@
             width: 100%;
           .image-wrapper {
               width: 15rem;
-              margin-bottom: -35%;
+              margin-bottom: -25%;
               height: 35rem;
           }
           .details-wrapper {
