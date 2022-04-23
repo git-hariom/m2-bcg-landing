@@ -1,6 +1,30 @@
 import './Branding.scss';
+import { useState } from 'react';
 
 const Branding = ({prop})=>{
+
+    const [counter, setCounter] = useState(1);
+
+    const handleMinus = ()=>{
+        setCounter((prev)=>{
+            if(prev === 0){
+                return 0;
+            }else{
+                return --prev;
+            }
+        })
+    }
+
+    const handleAdd = ()=>{
+        setCounter((prev)=>{
+            if(prev === 10){
+                return 10;
+            }else{
+                return ++prev;
+            }
+        })
+    }
+
     return (
         <div className="branding-wrapper">
             <div className="left-section-wrapper">
@@ -48,9 +72,9 @@ const Branding = ({prop})=>{
                                 </div>
                                 <div className="counter-wrapper">
                                     <div className="counter">
-                                        <div className="minus">-</div>
-                                        <div className="value">1</div>
-                                        <div className="add">+</div>
+                                        <div className="minus" onClick={handleMinus}>-</div>
+                                        <div className="value">{counter}</div>
+                                        <div className="add" onClick={handleAdd}>+</div>
                                     </div>
                                 </div>
                             </div>
