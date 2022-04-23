@@ -102,8 +102,8 @@
     position: absolute;
     left: 19vw;
     top: 15vw;
-    height: 4rem;
-    width: 4rem;
+    height: 6rem;
+    width: 6rem;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
@@ -139,8 +139,8 @@
     position: absolute;
     right: 19vw;
     top: 15vw;
-    height: 10rem;
-    width: 10rem;
+    height: 6rem;
+    width: 6rem;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
@@ -225,7 +225,8 @@
         .image-top-left {
         }
         .image-center-left {
-            top: 30vw;
+            top: 28vw;
+            left: 11vw;
         }
         .image-bottom-left {
         }
@@ -256,6 +257,7 @@
           .cards-wrapper {
             &.stacked-first {
               .label {
+                font-size: 12px;
               }
             }
             &.stacked-second {
@@ -269,7 +271,7 @@
         }
         .image-center-left {
             top: 30vw;
-            left: 15vw;
+            left: 10vw;
         }
         .image-bottom-left {
             bottom: 12vw;
@@ -317,7 +319,7 @@
           }
         }
         .image-top-left {
-            left : 5vw;
+            left : 23vw;
             height: 5rem;
             width: 5rem;
             top: 10%;
@@ -325,22 +327,24 @@
         .image-center-left {
             top: 55vw;
             left: 3%;
-            height: 3rem;
-            width: 3rem;
+            height: 6rem;
+            width: 6rem;
         }
         .image-bottom-left {
             bottom: 35vw;
             left: 8vw;
         }
         .image-top-right {
-            right: 4vw;
+            right: 22vw;
             top: 10%;
+            height: 8rem;
+            width: 8rem;
         }
         .image-center-right {
-          width: 3rem;
+          width: 6rem;
           right: 0;
           top: 65vw;
-          height: 3rem;
+          height: 6rem;
         }
         .image-bottom-right {
             bottom: 35vw;
