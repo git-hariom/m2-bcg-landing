@@ -1,24 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-.header-parent{
+.header-parent {
   position: sticky;
   top: 0;
   min-height: 4rem;
   width: 100%;
   z-index: 9999;
-  background-color: #E5EFFF;
-  .mobile-view-header{
+  background-color: #e5efff;
+  .mobile-view-header {
     display: grid;
     grid-template-columns: 3fr 1fr;
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: flex-start;
-    .hemberger{
+    .hemberger {
       padding-left: 3rem;
       height: 2rem;
       width: 2rem;
@@ -31,7 +31,7 @@
       display: flex;
       justify-content: flex-end;
       padding-right: 1rem;
-      flex : 1;
+      flex: 1;
       font-weight: 1000;
       font-size: 1rem;
       font-family: "Ubuntu", sans-serif;
@@ -51,7 +51,7 @@
       display: grid;
       grid-template-columns: 3fr 1fr;
       color: #272d4e;
-      .close{
+      .close {
         display: none;
       }
       .nav-options {
@@ -117,147 +117,159 @@
 
 //Large Desktop
 @media (max-width: 1440px) {
- .header-parent{
-  .header-wrapper {
-    .nav-option-wrapper {
-      .nav-options {
-        .brand-name {
+  .header-parent {
+    .header-wrapper {
+      .nav-option-wrapper {
+        .nav-options {
+          .brand-name {
+          }
+          .nav {
+          }
         }
-        .nav {
-        }
-      }
-      .btn-actions-wrapper {
-        .login {
-        }
-        .get-started {
-        }
-        .search {
+        .btn-actions-wrapper {
+          .login {
+          }
+          .get-started {
+          }
+          .search {
+          }
         }
       }
     }
   }
- }
 }
 //Laptop
-@media (max-width: 1024px) {  
-.header-parent{
-  .header-wrapper {
-    .nav-option-wrapper {
-      .nav-options {
-        .brand-name {
+@media (max-width: 1024px) {
+  .header-parent {
+    .header-wrapper {
+      .nav-option-wrapper {
+        .nav-options {
+          .brand-name {
+          }
+          .nav {
+          }
         }
-        .nav {
-        }
-      }
-      .btn-actions-wrapper {
-        .login {
-        }
-        .get-started {
-        }
-        .search {
+        .btn-actions-wrapper {
+          .login {
+          }
+          .get-started {
+          }
+          .search {
+          }
         }
       }
     }
   }
-}
 }
 //Tablets
 @media (max-width: 768px) {
- .header-parent{
-  .header-wrapper {
-    .nav-option-wrapper {
+  .header-parent {
+    .header-wrapper {
+      .nav-option-wrapper {
         grid-template-columns: 2fr 1fr;
-      .nav-options {
-        .brand-name {
+        .nav-options {
+          .brand-name {
             margin-right: 2rem;
             font-size: 1rem;
-        }
-        .nav {
+          }
+          .nav {
             font-size: 12px;
+          }
         }
-      }
-      .btn-actions-wrapper {
-        padding: 0 1rem;
-        .login {
+        .btn-actions-wrapper {
+          padding: 0 1rem;
+          .login {
             margin-right: 1rem;
             font-size: 12px;
-        }
-        .get-started {
+          }
+          .get-started {
             font-size: 12px;
-        }
-        .search {
+          }
+          .search {
+          }
         }
       }
     }
   }
- }
 }
 //Mobile
 @media (max-width: 425px) {
-.header-parent{
-  background-color: #0b0422;
-  min-height: 4rem;
-  position: sticky;
-  top: 0;
-  z-index: 5000;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  .header-wrapper {
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
+  .header-parent {
+    background-color: #0b0422;
+    min-height: 4rem;
+    position: sticky;
     top: 0;
-    left: 0;
-    background: #598fc6;
     z-index: 5000;
-    overflow: hidden;
-    align-items: flex-start;
-    overflow: hidden;
-    padding-top: 10%;
-    .nav-option-wrapper {          
-      color: white;
-      grid-template-columns: none;
-      grid-template-rows: 1fr 1fr;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    .mobile-view-header{
+      display: flex;
+      &.hide{
+        display: none;
+        overflow: hidden;
+      }
+    }
+    .header-wrapper {
       height: 100vh;
-      position: relative;
-      .close{
-        display: flex;
-        position: absolute;
-        height: 2rem;
-        width: 2rem;
-        right: 5%;
-        top: 0%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url('../../assets/imgs/2931151_close_delete_exit_remove_x_icon\ \(1\).png');
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #598fc6;
+      z-index: 5000;
+      overflow: hidden;
+      align-items: flex-start;
+      overflow: hidden;
+      padding-top: 10%;
+      &.hide{
+        display: none;
+        overflow: hidden;
       }
-      .nav-options {
-        height: 100%;
-        display: flex;
-        align-items:center;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 0 1rem;
-        .brand-name {
-          font-size: 2rem;
-          margin-bottom: 3rem;
+      .nav-option-wrapper {
+        color: white;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        height: 100vh;
+        position: relative;
+        .close {
+          display: flex;
+          position: absolute;
+          height: 2rem;
+          width: 2rem;
+          right: 5%;
+          top: 0%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-image: url("../../assets/imgs/2931151_close_delete_exit_remove_x_icon\ \(1\).png");
         }
-        .nav {
-          margin-bottom: 1rem;
-          font-size: 20px;          
+        .nav-options {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: flex-start;
+          padding: 0 1rem;
+          .brand-name {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+          }
+          .nav {
+            margin-bottom: 1rem;
+            font-size: 20px;
+          }
         }
-      }
-      .btn-actions-wrapper {
-        justify-content: center;
-        padding: 0 1rem;
-        flex-direction: unset;
-        .login {
-        }
-        .get-started {
-        }
-        .search {
+        .btn-actions-wrapper {
+          justify-content: center;
+          padding: 0 1rem;
+          flex-direction: unset;
+          .login {
+          }
+          .get-started {
+          }
+          .search {
+          }
         }
       }
     }
   }
-}
 }
