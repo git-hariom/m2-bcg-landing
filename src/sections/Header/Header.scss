@@ -2,22 +2,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 .header-parent{
-  position: relative;
-  height: 6rem;
+  position: sticky;
+  top: 0;
+  min-height: 4rem;
   width: 100%;
-  .hemberger{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  z-index: 5000;
+  background-color: #ECF0FD;
+  .mobile-view-header{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 100%;
+    width: 100%;
     position: absolute;
-    left: 5%;
-    top: 2%;
-    height: 4rem;
-    width: 4rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url("../../assets/imgs/1814109_hamburger_menu_icon.png");
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .hemberger{
+      padding-left: 3rem;
+      height: 2rem;
+      width: 2rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("../../assets/imgs/1814109_hamburger_menu_icon\ \(1\).png");
+    }
+    .brand-name {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 1rem;
+      flex : 1;
+      font-weight: 1000;
+      font-size: 1rem;
+      font-family: "Ubuntu", sans-serif;
+      cursor: pointer;
+      color: white;
+    }
   }
   .header-wrapper {
-    height: 6rem;
+    height: 4rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -36,7 +59,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        padding: 0 1rem;
+        padding: 0 2rem;
         .brand-name {
           font-weight: 1000;
           font-size: 1.2rem;
@@ -172,7 +195,12 @@
 //Mobile
 @media (max-width: 425px) {
 .header-parent{
-  .header-wrapper {
+  background-color: #0b0422;
+  min-height: 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 5000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  .header-wrapper {
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -182,7 +210,6 @@
     z-index: 5000;
     overflow: hidden;
     align-items: flex-start;
-    transition: 0.3s ease-in;
     overflow: hidden;
     padding-top: 10%;
     .nav-option-wrapper {          

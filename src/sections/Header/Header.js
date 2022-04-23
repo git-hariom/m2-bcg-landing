@@ -6,9 +6,12 @@ const Header = ({prop})=>{
     const [toggleHemberger, setToggleHemberger] = useState(false);
     
     const renderConditionalHeader = () =>{
-        if(!toggleHemberger && window.screen.width<=768){
+        if(!toggleHemberger && window.screen.width<=425){
             return (
-                <div className="hemberger" onClick={()=>setToggleHemberger((prev)=>{return !prev})}></div>
+                <div className="mobile-view-header">
+                    <div className="hemberger" onClick={()=>setToggleHemberger((prev)=>{return !prev})}></div>
+                    <span className='brand-name'>COMMERCE</span>
+                </div>
             )
         }else{
             return (
