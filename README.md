@@ -1,3 +1,7 @@
-# Libraries used on top of the Existing Modules
+# This is a ReactJs Based Application.
+# To set it up, clone this to your system run below commands :
+    - npm install
+    - npm start
 
-1. sass
+
+# Author - Hariom Sinha
