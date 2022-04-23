@@ -1,9 +1,15 @@
 import './Branding.scss';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 
 const Branding = ({prop})=>{
 
     const [counter, setCounter] = useState(1);
+    const introRef = useRef();
+    useEffect(()=>{
+        gsap.to(introRef.current, {opacity : 1, duration : 2});
+    },[]);
+    
 
     const handleMinus = ()=>{
         setCounter((prev)=>{
@@ -28,7 +34,7 @@ const Branding = ({prop})=>{
     return (
         <div className="branding-wrapper">
             <div className="left-section-wrapper">
-                <div className="title">
+                <div className="title" ref={introRef}>
                     <span>Lorem ipsum is placeholder text for previewing</span>
                 </div>
                 <div className="sub-title">

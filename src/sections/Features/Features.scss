@@ -80,6 +80,12 @@
         font-family: "Ubuntu", sans-serif;
         font-size: 18px;
         margin-left: 10%;
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:hover{
+          text-decoration: underline;
+          transform: scale(1.1);
+        }
       }
     }
     .section2 {
@@ -174,6 +180,12 @@
         font-family: "Ubuntu", sans-serif;
         font-size: 18px;
         margin-left: 10%;
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:hover{
+          text-decoration: underline;
+          transform: scale(1.1);
+        }
       }
     }
     .section3 {
@@ -246,6 +258,12 @@
         font-family: "Ubuntu", sans-serif;
         font-size: 18px;
         margin-left: 10%;
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:hover{
+          text-decoration: underline;
+          transform: scale(1.1);
+        }
       }
     }
   }

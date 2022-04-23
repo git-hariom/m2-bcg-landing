@@ -1,6 +1,7 @@
 import "./Features.scss";
 
 const Features = ({ prop }) => {
+
   return (
     <div className="features-wrapper">
       <div className="title-wrapper">
