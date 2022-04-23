@@ -18,7 +18,7 @@
     }
     .quote {
       text-align: center;
-      font-size: 12px;
+      font-size: 16px;
       color: #94a2b3;
       margin-top: 1rem;
       width: 30%;
@@ -108,6 +108,7 @@
       .title {
       }
       .quote {
+        width: 50%;
       }
     }
     .team-image-wrapper {
@@ -115,11 +116,20 @@
       }
     }
     .grey-bg {
+      height: 12rem;
     }
     .bg-dotted {
       &.left {
+        height: 5rem;
+        width: 5rem;
+        left: 12%;
+        bottom: 25%;
       }
       &.right {
+        height: 5rem;
+        width: 5rem;
+        right: 18%;
+        bottom: 25%;
       }
     }
     .sm-circle {

@@ -267,6 +267,7 @@
 //Laptop
 @media (max-width: 1024px) {
     .footer-wrapper {
+      margin-top: -6rem;
         .sec-get-started {
           .label {
             span {
@@ -325,7 +326,9 @@
       }
 }
 //Tablets
-@media (max-width: 768px) {  .footer-wrapper {
+@media (max-width: 768px) {  
+  .footer-wrapper {
+    margin-top: -4rem;
     .sec-get-started {
       .label {
         span {
